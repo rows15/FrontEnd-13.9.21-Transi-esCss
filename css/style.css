@@ -1,0 +1,59 @@
+body{
+    background-image: url("https://projetosespeciais.com/wp-content/uploads/2019/12/Palco-para-Escola.jpg");
+    background-size: 2000px;
+    background-repeat: no-repeat;
+}
+#youtube{
+    animation: iconeAnimation .5s infinite linear;
+}
+@keyframes iconeAnimation {
+    0%{
+        rotate: 0;
+        translate: 800px;
+    }
+    100%{
+        rotate: 360deg;
+        translate: 400px;
+    }
+    
+}
+
+button{
+    background-color: gray;
+    transition: background-color .5s linear;
+    height: 100px;
+    width: 300px;
+}
+
+button:hover{
+    background-color: red;
+}
+
+#bola{
+    height: 60px;
+    animation: bolaAnimation 5s infinite linear;
+    position: fixed;
+    top:750px;
+    left:400px
+
+}
+#reiDoPop{
+height: 600px;
+position: fixed;
+top:300px;
+animation: mainAnimation 5s infinite linear;
+}
+
+@keyframes bolaAnimation{
+    0%{transform: translateX(0);
+    opacity: 0%;}
+    50%{ transform: translateX(1000px);
+    opacity: 100%;}
+    100%{transform: translateX(0);
+    opacity: 0%;}
+}
+@keyframes mainAnimation{
+    0%{transform: translateX(0) scaleX(0)}
+    50%{transform: translateX(1000px) scaleX(-100%)}
+    100%{transform: translateX(0) }
+}
